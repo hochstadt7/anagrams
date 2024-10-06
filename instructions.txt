@@ -1,0 +1,16 @@
+A small web service for printing similar words in the English language.
+To use the service:
+
+1. Clone the Repository:
+git clone git@github.com:hochstadt7/gutsy-anagrams.git
+cd gutsy-anagrams
+
+2. Build docker image:
+docker build -t service .
+
+3. Run the Docker container:
+docker run -p 8000:8000 service
+
+Access the service's endpoints via your web browser:
+Use http://localhost:8000/api/v1/similar?word=<word> to get anagrams for word <word>
+Use http://localhost:8000/api/v1/stats to get general statistics general about the program
